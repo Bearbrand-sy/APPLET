@@ -71,6 +71,11 @@ body {
         margin-left: 0px; 
         cursor: pointer; 
 }
+.h3 {
+  align-content: center;
+  justify-content: center;
+  margin-left: 28rem;
+}
    </style> 
        
 </head>
@@ -108,6 +113,10 @@ body {
         </div>
       </nav>
   </nav>
+  <div class="h3">
+    <h3>Applet in Event Driven Programming</h3>
+  </div>
+  
 
 <body>
   <form class ="form">     
@@ -210,7 +219,17 @@ body {
           </div>
         </div>
 </body>
+
+<script>
+  function search(event) {
+      event.preventDefault(); 
+      const query = document.getElementById('query').value;
+      if (query) {
+          
+          alert(`Searching for: ${query}`);
+      } else {
+          alert('Please enter a search term.');
+      }
+  }
+</script>
 </html>
-<div class="container">
-  <h1></h1>
-</div>
